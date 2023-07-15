@@ -110,6 +110,32 @@ a:hover{text-decoration: none; cursor:pointer;}
 }
 
 
+/* Background Effects */
+
+.parallax__container {
+	clip: rect(0, auto, auto, 0);
+	height: 100%;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index:-1;
+}
+.parallax {
+	position: fixed;
+	top: 0;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
 /* Dark theme */
 
 .d-bloc{
@@ -341,6 +367,10 @@ button{
 }
 
 
+/* Scroll FX */
+.scroll-fx-in-range{
+	will-change: opacity;
+}
 
 
 /* ScrollToTop button */
@@ -493,7 +523,7 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	font-family:"Pacifico";
 	font-weight:700;
 	width:100%;
-	line-height:95px;
+	line-height:80px;
 }
 
 /* = Colour
@@ -690,7 +720,7 @@ url("img/11.webp") 2x);
 		width:100%;
 	}
 	.hero-fill-mask{
-		fill:rgba(0,0,0,0.80);
+		fill:transparent;
 	}
 	.logo-style{
 	}
